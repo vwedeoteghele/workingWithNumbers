@@ -23,13 +23,10 @@ function primeFactors(number) {
 
    function nextPrimeNumber(currentprime) {
     let returnValue;
-   console.log('nextprime number', currentprime);
      for(let i = currentprime + 1; ; i++) {
       let newPrime = isPrime(i)
       
       if(newPrime) {
-        // console.log(newPrime);
-        console.log(i);
         return i
         // returnValue = i
       }
